@@ -9,9 +9,8 @@ const ProgramList = () => {
       .then(response => response.json())
       .then(data => setPrograms(data))
   }, [])
-  
 
-const removeProgram = (id) => setPrograms(programs.filter(program => program.id !== id))
+  const removeProgram = (id) => setPrograms(programs.filter(program => program.id !== id))
 
   const programList = programs.map(program =>
     <ProgramCard
