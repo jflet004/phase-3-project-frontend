@@ -36,7 +36,7 @@ const AddProgram = () => {
 
   return (
     <div>
-      <h1>Add Program</h1>
+      <h1>New Program</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Title: </label>
