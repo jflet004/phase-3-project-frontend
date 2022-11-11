@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+// import PageNotFound from "./components/PageNotFound";
 import Home from "./components/Home";
 import StudentList from "./components/StudentList";
 import ProgramList from "./components/ProgramList";
@@ -11,9 +12,10 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route exact path="/" element={ <Home /> } />
-          <Route exact path="/students" element={ <StudentList /> } />
-          <Route exact path="/programs" element={ <ProgramList /> } />
+          <Route path="/" element={ <Home /> } />
+          <Route path="/students" element={ <StudentList /> } />
+          <Route path="/programs" element={ <ProgramList /> } />
+          {/* <Route component={ PageNotFound } */}
         </Routes>
       </div>
     </Router>
