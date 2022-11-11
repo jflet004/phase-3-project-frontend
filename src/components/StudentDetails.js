@@ -9,7 +9,7 @@ const StudentDetails = () => {
     fetch(`http://localhost:9292/students/${params.id}`)
     .then(response => response.json())
     .then(data => setStudent(data))
-  }, [])
+  }, [params.id])
 
   let status;
   
