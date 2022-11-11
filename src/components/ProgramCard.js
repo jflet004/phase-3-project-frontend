@@ -15,7 +15,7 @@ const ProgramCard = ({ program, onDeleteProgram }) => {
         <li>
           <NavLink to={`/programs/${program.id}`}>
             {program.title}
-          </NavLink> - <button onClick={handleDeleteClick}>X</button>
+          </NavLink> - {program.teacher} - <button>Edit</button> - <button onClick={handleDeleteClick}>Delete</button>
         </li>
     </div>
   )

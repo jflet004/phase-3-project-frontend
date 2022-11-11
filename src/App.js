@@ -6,6 +6,7 @@ import StudentList from "./components/StudentList";
 import AddStudent from "./components/AddStudent";
 import ProgramList from "./components/ProgramList";
 import AddProgram from "./components/AddProgram";
+import ProgramDetails from "./components/ProgramDetails";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/students/new" element={ <AddStudent /> } />
           <Route path="/programs" element={ <ProgramList /> } />
           <Route path="/programs/new" element={ <AddProgram /> } />
+          <Route path="/programs/:id" element={ <ProgramDetails /> } />
         </Routes>
       </div>
     </Router>
