@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import StudentList from "./components/StudentList";
 import AddStudent from "./components/AddStudent";
+import StudentDetails from "./components/StudentDetails";
 import ProgramList from "./components/ProgramList";
 import AddProgram from "./components/AddProgram";
 import ProgramDetails from "./components/ProgramDetails";
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={ <Home /> } />
           <Route path="/students" element={ <StudentList /> } />
           <Route path="/students/new" element={ <AddStudent /> } />
+          <Route path="/students/:id" element={ <StudentDetails /> } />
           <Route path="/programs" element={ <ProgramList /> } />
           <Route path="/programs/new" element={ <AddProgram /> } />
           <Route path="/programs/:id" element={ <ProgramDetails /> } />
