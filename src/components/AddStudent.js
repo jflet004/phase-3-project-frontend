@@ -23,7 +23,8 @@ const AddStudent = () => {
     const studentObj = {
       first_name: firstName ,
       last_name: lastName,
-      age: age 
+      age: age,
+      active: true 
     }
 
     fetch("http://localhost:9292/students", {
