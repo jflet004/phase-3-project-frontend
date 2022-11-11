@@ -1,9 +1,10 @@
 import React from 'react'
 
 const AddStudent = () => {
+
   return (
     <div>
-      Add Student
+      <h1>Add Student</h1>
     </div>
   )
 }
