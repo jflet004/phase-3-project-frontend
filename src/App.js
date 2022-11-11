@@ -20,7 +20,6 @@ function App() {
           <Route path="/students/new" element={ <AddStudent /> } />
           <Route path="/programs" element={ <ProgramList /> } />
           <Route path="/programs/new" element={ <AddProgram /> } />
-          {/* <Route component={ PageNotFound } */}
         </Routes>
       </div>
     </Router>
