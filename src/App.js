@@ -4,7 +4,9 @@ import Navbar from "./components/Navbar";
 // import PageNotFound from "./components/PageNotFound";
 import Home from "./components/Home";
 import StudentList from "./components/StudentList";
+import AddStudent from "./components/AddStudent";
 import ProgramList from "./components/ProgramList";
+import AddProgram from "./components/AddProgram";
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
         <Routes>
           <Route path="/" element={ <Home /> } />
           <Route path="/students" element={ <StudentList /> } />
+          <Route path="/students/new" element={ <AddStudent /> } />
           <Route path="/programs" element={ <ProgramList /> } />
+          <Route path="/programs/new" element={ <AddProgram /> } />
           {/* <Route component={ PageNotFound } */}
         </Routes>
       </div>
