@@ -26,6 +26,7 @@ const StudentDetails = () => {
       <h2>Name: {student.first_name} {student.last_name}</h2>
       <h3>Age: {student.age} years old</h3>
       <h3>Status: {status}</h3>
+      <br />
     </div>
   )
 }

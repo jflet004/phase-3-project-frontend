@@ -11,11 +11,11 @@ const StudentList = () => {
     .then(data => setStudents(data))
   }, [])
 
+  const removeStudent = id => setStudents(students.filter(student => student.id !== id))
+  
   const studentList = students.map(student => 
-  <StudentCard 
-    key={student.id}
-    student={student}
-  />)
+  <StudentCard key={student.id} student={student} onDeleteStudent={removeStudent} />)
+
 
   return (
     <div>
