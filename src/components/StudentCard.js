@@ -10,7 +10,7 @@ const StudentCard = ({ student, onDeleteStudent }) => {
     .then(response => response.json())
     .then(() => onDeleteStudent(student.id) )
   } 
-  
+
   return (
     <div>
         <li>
