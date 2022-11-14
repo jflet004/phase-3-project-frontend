@@ -11,6 +11,7 @@ import ProgramList from "./components/ProgramList";
 import AddProgram from "./components/AddProgram";
 import ProgramDetails from "./components/ProgramDetails";
 import EditProgram from "./components/EditProgram";
+import RegisteredPrograms from "./components/RegisteredPrograms";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/students/new" element={ <AddStudent /> } />
           <Route path="/students/:id" element={ <StudentDetails /> } />
           <Route path="/students/:id/edit" element={ <EditStudent /> } />
+          <Route path="/students/:id/programs" element={ <RegisteredPrograms /> } />
           <Route path="/programs" element={ <ProgramList /> } />
           <Route path="/programs/new" element={ <AddProgram /> } />
           <Route path="/programs/:id" element={ <ProgramDetails /> } />

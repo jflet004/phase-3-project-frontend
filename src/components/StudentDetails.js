@@ -27,6 +27,9 @@ const StudentDetails = () => {
       <h2>Name: {student.first_name} {student.last_name}</h2>
       <h3>Age: {student.age} years old</h3>
       <h3>Status: {status}</h3>
+      <br />
+      <NavLink to={`/students/${student.id}/programs`}>Enrolled Programs</NavLink>
+      <br />
       <NavLink to={`/students/${student.id}/edit`}>Edit Student</NavLink>
       <br />
       <NavLink to={`/students`}>Back to Student List</NavLink>

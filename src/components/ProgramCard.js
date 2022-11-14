@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import './Styles/Programs.css'
 
 
-const ProgramCard = ({ program, onDeleteProgram }) => {
+const ProgramCard = ({ program, students, onDeleteProgram }) => {
 
   const handleDeleteClick = () => {
     fetch(`http://localhost:9292/programs/${program.id}`, {
@@ -15,7 +15,7 @@ const ProgramCard = ({ program, onDeleteProgram }) => {
   return (
     <div className='text'>
       <li>
-        <NavLink to={`/programs/${program.id}`}>{program.title}</NavLink> - {program.teacher} - Students: {program.students.length} - <button>Edit</button> - <button onClick={handleDeleteClick}>Delete</button>
+        <NavLink to={`/programs/${program.id}`}>{program.title}</NavLink> - {program.teacher} - <button>Edit</button> - <button onClick={handleDeleteClick}>Delete</button>
       </li>
     </div>
   )

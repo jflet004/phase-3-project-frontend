@@ -17,6 +17,7 @@ const ProgramList = () => {
     <ProgramCard
       key={program.id}
       program={program}
+      students={program.students}
       onDeleteProgram={removeProgram}
     />)
   return (
