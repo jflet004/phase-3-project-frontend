@@ -6,9 +6,11 @@ import StudentList from "./components/StudentList";
 import AddStudent from "./components/AddStudent";
 import EditStudent from "./components/EditStudent";
 import StudentDetails from "./components/StudentDetails";
+import EnrolledStudents from "./components/EnrolledStudents";
 import ProgramList from "./components/ProgramList";
 import AddProgram from "./components/AddProgram";
 import ProgramDetails from "./components/ProgramDetails";
+import EditProgram from "./components/EditProgram";
 
 function App() {
 
@@ -25,6 +27,8 @@ function App() {
           <Route path="/programs" element={ <ProgramList /> } />
           <Route path="/programs/new" element={ <AddProgram /> } />
           <Route path="/programs/:id" element={ <ProgramDetails /> } />
+          <Route path="/programs/:id/edit" element={ <EditProgram /> } />
+          <Route path="/programs/:id/students" element={ <EnrolledStudents /> } />
         </Routes>
       </div>
     </Router>

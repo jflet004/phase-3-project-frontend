@@ -20,8 +20,8 @@ const ProgramList = () => {
       onDeleteProgram={removeProgram}
     />)
   return (
-    <div className='programs'>
-      <h1>Programs</h1>
+    <div >
+      <h1 className='programs'>Programs</h1>
       {programList}
     </div>
   )

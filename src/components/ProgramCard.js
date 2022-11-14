@@ -1,5 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import './Styles/Programs.css'
+
 
 const ProgramCard = ({ program, onDeleteProgram }) => {
 
@@ -7,16 +9,14 @@ const ProgramCard = ({ program, onDeleteProgram }) => {
     fetch(`http://localhost:9292/programs/${program.id}`, {
       method: "DELETE"
     })
-    .then(response => response.json())
-    .then(() => onDeleteProgram(program.id))
+      .then(response => response.json())
+      .then(() => onDeleteProgram(program.id))
   }
   return (
-    <div>
-        <li>
-          <NavLink to={`/programs/${program.id}`}>
-            {program.title}
-          </NavLink> - {program.teacher} - Students: {program.students.length} - <button>Edit</button> - <button onClick={handleDeleteClick}>Delete</button>
-        </li>
+    <div className='text'>
+      <li>
+        <NavLink to={`/programs/${program.id}`}>{program.title}</NavLink> - {program.teacher} - Students: {program.students.length} - <button>Edit</button> - <button onClick={handleDeleteClick}>Delete</button>
+      </li>
     </div>
   )
 }

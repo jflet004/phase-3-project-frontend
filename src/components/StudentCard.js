@@ -1,5 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import './Styles/Programs.css'
+
 
 const StudentCard = ({ student, onDeleteStudent }) => {
 
@@ -12,7 +14,7 @@ const StudentCard = ({ student, onDeleteStudent }) => {
   } 
 
   return (
-    <div>
+    <div className='programs'>
         <li>
           <NavLink to={`/students/${student.id}`}>
             {student.first_name} {student.last_name}

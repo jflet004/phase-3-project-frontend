@@ -1,15 +1,13 @@
 .navigation-bar {
   text-align: center;
-  display: inline;
+  display: inline-block;
   display: block;
   
 }
 
 .link {
-  font-size: 25px;
-  width: 60%;
   margin: 5% 0 1%;
-  padding: 15px;
+  padding: 10px;
   text-decoration: none;
   color: #f6f6f6;
   background-color: #0401a2;

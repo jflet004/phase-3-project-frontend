@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import './Styles/Programs.css'
+
 
 const EditStudent = () => {
   const [student, setStudent] = useState([])
@@ -53,7 +55,7 @@ const EditStudent = () => {
   }
 
   return (
-    <div>
+    <div className='programs'>
       <h1>Edit Student ({student.first_name} {student.last_name})</h1>
       <form onSubmit={handleSubmit}>
         <div>
