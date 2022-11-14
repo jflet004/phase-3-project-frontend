@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import StudentCard from './StudentCard'
+import './Styles/Programs.css'
 
 const StudentList = () => {
 
@@ -18,7 +19,7 @@ const StudentList = () => {
 
 
   return (
-    <div>
+    <div className='programs'>
       <h1>Students</h1>
       {studentList}
     </div>

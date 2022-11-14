@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import ProgramCard from './ProgramCard'
+import './Styles/Programs.css'
 
 const ProgramList = () => {
   const [programs, setPrograms] = useState([])
@@ -19,7 +20,7 @@ const ProgramList = () => {
       onDeleteProgram={removeProgram}
     />)
   return (
-    <div>
+    <div className='programs'>
       <h1>Programs</h1>
       {programList}
     </div>

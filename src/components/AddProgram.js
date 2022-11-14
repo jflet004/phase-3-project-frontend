@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import './Styles/Programs.css'
 
 const AddProgram = () => {
   const [title, setTitle] = useState("")
@@ -35,7 +36,7 @@ const AddProgram = () => {
   }
 
   return (
-    <div>
+    <div className='programs'>
       <h1>New Program</h1>
       <form onSubmit={handleSubmit}>
         <div>

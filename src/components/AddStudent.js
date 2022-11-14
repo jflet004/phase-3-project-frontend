@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import './Styles/Programs.css'
 
 const AddStudent = () => {
   const [firstName, setFirstName] = useState("")
@@ -21,10 +22,10 @@ const AddStudent = () => {
   const handleSubmit = e => {
     e.preventDefault()
     const studentObj = {
-      first_name: firstName ,
+      first_name: firstName,
       last_name: lastName,
       age: age,
-      active: true 
+      active: true
     }
 
     fetch("http://localhost:9292/students", {
@@ -33,19 +34,19 @@ const AddStudent = () => {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(studentObj)
-      
-    })
-    .then(response => response.json())
 
-    navigate("/programs")
+    })
+      .then(response => response.json())
+
+    navigate("/students")
   }
 
   return (
-    <div>
+    <div className='programs'>
       <h1>New Student</h1>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label>First Name: </label>
+        <div >
+          <label >First Name: </label>
           <input type="text" value={firstName} onChange={handleFirstNameChange} />
         </div>
         <br />
@@ -54,8 +55,8 @@ const AddStudent = () => {
           <input type="text" value={lastName} onChange={handleLastNameChange} />
         </div>
         <br />
-        <div>
-          <label>Age: </label>
+        <div >
+          <label >Age: </label>
           <input type="text" value={age} onChange={handleAgeChange} />
         </div>
         <br />
