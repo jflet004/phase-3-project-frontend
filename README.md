@@ -1,3 +1,29 @@
+## Description
+
+React frontend of my SchoolRostr application. You can view, enroll, update and delete both students and programs; as well as being able to view which programs each student is currently enrolled in and vice-versa.  
+
+## Installation
+
+To install, fork and clone this repository
+
+![GIF](src/components/images/installation.gif)
+
+When that is done, make sure to `cd` into the correct directory
+
+```bash
+cd school-app-frontend
+```
+
+## Usage
+
+Once in the correct directory, you can open the application by typing `npm start`
+
+Follow the prompts on the home page and enjoy!
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
