@@ -6,7 +6,7 @@ React frontend of my SchoolRostr application. You can view, register, update and
 
 To install, fork and clone this repository
 
-![GIF](src/components/images/schoolRostr_installation.gif)
+<!-- ![GIF](src/components/images/schoolRostr_installation.gif) -->
 
 When that is done, make sure to `cd` into the correct directory
 
