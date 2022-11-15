@@ -5,7 +5,7 @@ import './Styles/Home.css'
 const Home = () => {
   return (
     <div className='home'>
-      <h1>Welcome to Music & Art School</h1>
+      <h1>Welcome to SchoolRostr</h1>
       <li>To view our Programs, click <NavLink to="/programs">here</NavLink></li>
       <li>To view our Students, click <NavLink to="/students">here</NavLink></li>
       <li>To register a Student, click <NavLink to="/students/new">here</NavLink></li>
