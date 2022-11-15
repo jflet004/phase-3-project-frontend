@@ -1,17 +1,17 @@
 ## Description
 
-React frontend of my SchoolRostr application. You can view, enroll, update and delete both students and programs; as well as being able to view which programs each student is currently enrolled in and vice-versa.  
+React frontend of my SchoolRostr application. You can view, register, update and delete both students and programs; as well as being able to view which programs each student is currently enrolled in and vice-versa.  
 
 ## Installation
 
 To install, fork and clone this repository
 
-![GIF](src/components/images/installation.gif)
+![GIF](src/components/images/schoolRostr_installation.gif)
 
 When that is done, make sure to `cd` into the correct directory
 
 ```bash
-cd school-app-frontend
+cd phase-3-project-frontend
 ```
 
 ## Usage
