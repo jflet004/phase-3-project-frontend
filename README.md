@@ -21,6 +21,8 @@ Make sure the [backend](https://github.com/jflet004/phase-3-sinatra-react-projec
 
 Follow the prompts on the home page and enjoy!
 
+![GIF](src/components/images/schoolRostr_preview.gif)
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
