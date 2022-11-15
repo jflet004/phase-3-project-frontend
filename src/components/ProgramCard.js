@@ -15,7 +15,7 @@ const ProgramCard = ({ program, students, onDeleteProgram }) => {
   return (
     <div className='text'>
       <li>
-        <NavLink to={`/programs/${program.id}`}>{program.title}</NavLink> - {program.teacher} - <button>Edit</button> - <button onClick={handleDeleteClick}>Delete</button>
+        <NavLink to={`/programs/${program.id}`}>{program.title}</NavLink> - {program.teacher} - <button onClick={handleDeleteClick}>Delete</button>
       </li>
     </div>
   )
