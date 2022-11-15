@@ -17,6 +17,7 @@ cd phase-3-project-frontend
 ## Usage
 
 Once in the correct directory, you can open the application by typing `npm start`
+Make sure the [backend](https://github.com/jflet004/phase-3-sinatra-react-project) server is running.
 
 Follow the prompts on the home page and enjoy!
 

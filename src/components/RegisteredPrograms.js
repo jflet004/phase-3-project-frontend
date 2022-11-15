@@ -15,7 +15,7 @@ const RegisteredPrograms = () => {
   return (
     <div className='programs'>
       <h1>Enrolled programs</h1>
-      {programs.map(program => <ProgramCard key={program.id} program={program} />)}
+      {programs.map(program => (<li key={program.id}>{`${program.title} with ${program.teacher}`}</li>))}
     </div>
   )
 }

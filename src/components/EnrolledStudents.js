@@ -15,7 +15,7 @@ const EnrolledStudents = () => {
   return (
     <div className='programs'>
       <h1>Enrolled Students</h1>
-      {students.map(student => <StudentCard key={student.id} student={student} />)}
+      {students.map(student => (<li key={student.id}>{`${student.first_name} ${student.last_name}`}</li>))}
     </div>
   )
 }
